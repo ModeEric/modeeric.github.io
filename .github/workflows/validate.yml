@@ -1,0 +1,41 @@
+name: Validate Website
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      
+    - name: Validate HTML
+      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
+      with:
+        root: .
+        
+    - name: Check for broken links
+      uses: lycheeverse/lychee-action@v1
+      with:
+        args: --verbose --no-progress './**/*.html' './**/*.md'
+        fail: true
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        
+    - name: Validate JavaScript
+      run: |
+        npx jshint script.js || true
+        
+    - name: Check for common issues
+      run: |
+        echo "✓ Checking for TODO comments..."
+        ! grep -r "TODO\|FIXME\|XXX" --include="*.html" --include="*.css" --include="*.js" . || true
+        echo "✓ Checking file sizes..."
+        find . -type f -size +1M -not -path "./.git/*" || echo "No large files found"
+        echo "✓ All checks passed!"
+

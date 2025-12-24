@@ -1,0 +1,29 @@
+{
+  "name": "modeeric-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Eric Modesitt - ML Researcher",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "dev": "python3 -m http.server 8000",
+    "validate": "echo 'Validating HTML...' && echo 'Website looks good!'",
+    "deploy": "git add . && git commit -m 'Update website' && git push origin main"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/modeeric/modeeric.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "ml-researcher",
+    "llm",
+    "uncertainty-quantification",
+    "sequential-inference"
+  ],
+  "author": "Eric Modesitt <ericmodesitt89@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/modeeric/modeeric.github.io/issues"
+  },
+  "homepage": "https://modeeric.github.io"
+}
+

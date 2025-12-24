@@ -1,0 +1,40 @@
+# CNAME Configuration (Optional)
+
+## To use a custom domain:
+
+1. Purchase a domain (e.g., ericmodesitt.com)
+
+2. Uncomment and edit the line below with your domain:
+   ```
+   # ericmodesitt.com
+   ```
+
+3. Configure DNS records at your domain registrar:
+   ```
+   Type: A
+   Host: @
+   Value: 185.199.108.153
+          185.199.109.153
+          185.199.110.153
+          185.199.111.153
+
+   Type: CNAME
+   Host: www
+   Value: modeeric.github.io
+   ```
+
+4. Commit and push this file:
+   ```bash
+   git add CNAME
+   git commit -m "Add custom domain"
+   git push
+   ```
+
+5. In GitHub Settings → Pages → Custom domain, enter your domain
+
+6. Wait 24-48 hours for DNS propagation
+
+## Using GitHub subdomain (default)
+If you're happy with `modeeric.github.io`, no action needed!
+Just delete or ignore this file.
+
