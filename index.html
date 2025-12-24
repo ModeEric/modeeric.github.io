@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Eric Modesitt - ML Researcher specializing in LLM Reliability, Uncertainty Quantification, and Sequential Inference">
+    <meta name="author" content="Eric Modesitt">
+    <title>Eric Modesitt | ML Researcher</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <div class="nav-content">
+                <a href="#" class="logo">Eric Modesitt</a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#research">Research</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#publications">Publications</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="greeting">Hi, I'm</span>
+                        <span class="name">Eric Modesitt</span>
+                    </h1>
+                    <p class="hero-subtitle">ML Researcher</p>
+                    <p class="hero-focus">LLM Reliability · Uncertainty Quantification · Sequential Inference</p>
+                    <div class="hero-description">
+                        <p>Builder–researcher focused on <strong>reliability, calibration, and robustness in large language models</strong>. I design sequential inference systems that provide statistical guarantees on model outputs—work motivated by ensuring AI systems remain trustworthy as they scale.</p>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                        <a href="https://github.com/modeeric" target="_blank" class="btn btn-secondary">View GitHub</a>
+                    </div>
+                    <div class="hero-meta">
+                        <span class="location">📍 Arlington, Virginia</span>
+                        <span class="separator">•</span>
+                        <span class="citizenship">🇺🇸 US Citizen</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Focus Section -->
+    <section class="section research-focus" id="about">
+        <div class="container">
+            <h2 class="section-title">Research Focus</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">🎯</div>
+                    <h3>Sequential Inference</h3>
+                    <p>Designing systems with statistical guarantees, early stopping mechanisms, and optimal cost–accuracy tradeoffs</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">📊</div>
+                    <h3>Uncertainty & Calibration</h3>
+                    <p>Building reliable, well-calibrated model outputs with principled uncertainty estimation</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">🛡️</div>
+                    <h3>Robustness Testing</h3>
+                    <p>Stress-testing models via perturbations, distribution shift, and adversarial inputs</p>
+                </div>
+                <div class="research-card">
+                    <div class="research-icon">⚡</div>
+                    <h3>Efficient Ensembles</h3>
+                    <p>Adaptive computation using KV caching and low-cost branching strategies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Selected Research Section -->
+    <section class="section publications-section" id="publications">
+        <div class="container">
+            <h2 class="section-title">Selected Research</h2>
+            <div class="publications">
+                <div class="publication-card">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">Sequential Multi-Persona Direct Logit Inference (SMP-DLI)</h3>
+                        <p class="pub-venue">Working Paper</p>
+                        <p class="pub-description">
+                            Built a <strong>sequential LLM inference system</strong> that adaptively allocates compute based on confidence. 
+                            Demonstrated calibrated uncertainty estimates, statistical early stopping, and methods for 
+                            <strong>knowing when models should abstain</strong>. Evaluated across MMLU, ARC-Challenge, HellaSwag, and CommonsenseQA.
+                        </p>
+                        <div class="pub-tags">
+                            <span class="tag">Sequential Inference</span>
+                            <span class="tag">Uncertainty Quantification</span>
+                            <span class="tag">Calibration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-card">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h3 class="pub-title">ORBIT: Cost-Effective Dataset Curation for Large Language Model Domain Adaptation with an Astronomy Case Study</h3>
+                        <p class="pub-venue">ACL Findings (First Author)</p>
+                        <p class="pub-description">
+                            Designed a scalable data filtering pipeline over <strong>11T tokens</strong>, showing that data quality dominates scale. 
+                            Achieved consistent multi-point gains on MMLU with smaller, cleaner corpora.
+                        </p>
+                        <div class="pub-tags">
+                            <span class="tag">Data Curation</span>
+                            <span class="tag">Domain Adaptation</span>
+                            <span class="tag">LLM Training</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience-section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Research & Engineering Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Software Engineer — ML Infrastructure</h3>
+                                <p class="timeline-company">Capital One</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Aug 2025 – Present</span>
+                                <span class="timeline-location">Arlington, VA</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Designed reliability checks and validation systems for production ML pipelines</li>
+                            <li>Built automated testing frameworks reducing manual verification by <strong>99%</strong></li>
+                            <li>Experience with fault-tolerant distributed systems, observability, and CI/CD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Graduate Research Assistant — Information Retrieval & LLMs</h3>
+                                <p class="timeline-company">Zhai Lab, UIUC</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Jan 2025 – Aug 2025</span>
+                                <span class="timeline-location">Urbana, IL</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Built a <strong>135M-parameter Transformer reranker</strong> competitive with multi-billion-parameter baselines</li>
+                            <li>Ran controlled ablations on scaling, regularization, and representation quality</li>
+                            <li>Contributed to work awarded <strong>SIGIR 2025 Spotlight</strong></li>
+                            <li>First-author publications in ACL Findings and SIGIRD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Student Researcher</h3>
+                                <p class="timeline-company">National Center for Supercomputing Applications (NCSA)</p>
+                            </div>
+                            <div class="timeline-meta">
+                                <span class="timeline-date">Aug 2023 – Dec 2024</span>
+                                <span class="timeline-location">Urbana, IL</span>
+                            </div>
+                        </div>
+                        <ul class="timeline-description">
+                            <li>Trained domain-specific LLMs using selective pretraining and noise-filtered corpora</li>
+                            <li>Worked with HPC-scale training workflows and parameter-efficient tuning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section education-section" id="research">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="edu-year">2025</div>
+                    <div class="edu-content">
+                        <h3 class="edu-degree">M.C.S. Computer Science</h3>
+                        <p class="edu-specialization">Data Science Specialization</p>
+                        <p class="edu-school">University of Illinois Urbana-Champaign</p>
+                        <p class="edu-courses">Advanced NLP · Deep Learning · Computational Neuroscience</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="edu-year">2024</div>
+                    <div class="edu-content">
+                        <h3 class="edu-degree">B.S. Computer Science</h3>
+                        <p class="edu-specialization">Minor in Mathematics</p>
+                        <p class="edu-school">University of Illinois Urbana-Champaign</p>
+                        <p class="edu-honors">National Merit Finalist · James Scholar · ISUR Scholar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-category-title">ML & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">ViTs</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">W&B</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Parameter-Efficient Tuning</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Reliability</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Sequential Inference</span>
+                        <span class="skill-tag">Uncertainty Estimation</span>
+                        <span class="skill-tag">Calibration</span>
+                        <span class="skill-tag">Robustness Analysis</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Distributed Systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm always interested in discussing research collaborations, 
+                    new opportunities, or just chatting about LLM reliability and uncertainty quantification.
+                </p>
+                <div class="contact-methods">
+                    <a href="mailto:ericmodesitt89@gmail.com" class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>ericmodesitt89@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/modeeric" target="_blank" class="contact-card">
+                        <div class="contact-icon">💻</div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p>@modeeric</p>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/eric-modesitt" target="_blank" class="contact-card">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>eric-modesitt</p>
+                        </div>
+                    </a>
+                    <a href="tel:+16466477113" class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+1 (646) 647-7113</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Eric Modesitt. All rights reserved.</p>
+            <p class="footer-note">Built with care for reliability and performance.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
